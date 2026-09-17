@@ -1,32 +1,60 @@
-K-Means Clustering - Iris Dataset
-Este projeto demonstra a aplicação do algoritmo K-Means Clustering no conjunto de dados Iris. O objetivo é realizar o agrupamento não supervisionado das flores em 3 clusters com base em suas características (comprimento e largura da sépala e pétala). O modelo utiliza o algoritmo K-Means para encontrar os clusters e avalia a qualidade do agrupamento com o índice de silhueta.
+# K-Means Clustering — Iris Dataset
 
-O código também inclui uma visualização dos clusters gerados e os centros dos clusters em um gráfico 2D.
+> Demonstração de aprendizado não supervisionado com K-Means, avaliação por índice de silhueta e visualização dos clusters.
 
-Tecnologias Utilizadas:
-Python
+## Problema
 
-Scikit-learn (para implementação do algoritmo K-Means)
+Explorar como um algoritmo de clustering pode identificar grupos em dados sem utilizar rótulos durante o treinamento.
 
-Matplotlib (para visualização dos clusters)
+## Solução
 
-Pandas (para manipulação dos dados)
+O projeto aplica K-Means ao dataset Iris, buscando três clusters a partir das medidas de sépala e pétala. A qualidade do agrupamento é avaliada pelo **Silhouette Score** e os resultados são visualizados em duas dimensões.
 
-Objetivo:
-Demonstrar como o algoritmo K-Means pode ser aplicado para análise exploratória de dados e como ele pode ser usado para agrupar dados em clusters, sem a necessidade de rótulos.
+## Funcionalidades
 
-Como Usar:
-Clone o repositório para sua máquina local.
+- Carregamento do dataset Iris.
+- Preparação das variáveis numéricas.
+- Agrupamento com K-Means.
+- Avaliação por índice de silhueta.
+- Visualização dos clusters e centróides.
+- Script Python executável localmente.
 
-Instale as dependências necessárias com o comando:
+## Stack
 
-bash
-Copiar
-Editar
+- Python 3.x
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+
+## Como executar
+
+```bash
+python -m venv .venv
+
+# Windows
+.venv\Scripts\activate
+
+# Linux/macOS
+source .venv/bin/activate
+
 pip install -r requirements.txt
-Execute o script Python para realizar o clustering e gerar a visualização.
+python kmeans_clustering.py
+```
 
-Requisitos:
-Python 3.x
+## Observação metodológica
 
-Bibliotecas: pandas, numpy, matplotlib, scikit-learn
+O Iris é utilizado como dataset de demonstração. O objetivo do projeto é mostrar o processo de clustering e avaliação, não construir um modelo de produção.
+
+## Próximos passos
+
+- Tornar `k` configurável.
+- Comparar diferentes inicializações.
+- Adicionar testes automatizados.
+- Comparar métricas de clustering.
+- Documentar experimentos e resultados.
+
+## Autor
+
+**Anderson Leon Ayora**  
+Data Scientist | AI Engineer | Data Architect
